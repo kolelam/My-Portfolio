@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AboutMe from './About';
-import Contact from './ContactTab.js';
+import Contact from './ContactTab';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 
