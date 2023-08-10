@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AboutMe from './About';
 import Contact from './ContactTab';
-import Portfolio from './Portfolio';
+import Portfolio from './portfolio';
 import Resume from './Resume';
 
 // Combines all of the pages and sets nav bar and page content based on the nav link clicked
