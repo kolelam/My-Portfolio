@@ -1,8 +1,9 @@
 import React from 'react';
 
-import githublogo from './my-app/src/components/assets/github.png'; 
-import tyrsvault from './my-app/src/components/assets/tyrsvaultlandingpage.png';   
-import crusader from './my-app/src/components/assets/crusaderslogo.png';  
+import githublogo from './assets/github.png'; 
+import tyrsvault from './assets/tyrsvaultlandingpage.png';   
+import crusader from './assets/crusaderslogo.png';
+
 
 const galleryData = [
     {
@@ -27,7 +28,6 @@ const galleryData = [
         title: 'Coming soon!',
         deployedLink: '',
         gitHubLink: '',
-        image: soonImg
     }
 ];
 
