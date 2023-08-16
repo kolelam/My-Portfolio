@@ -1,21 +1,19 @@
 import React from 'react';
-import gitHubImg from '';
-import linkedInImg from '';
+import gitHubImg from './github.png'; 
+import linkedInImg from './linkedin.png'; 
 
 function TopNav({ page, pageContentHandler }) {
-
-    // Creates an extra className `active` to change color in App.css when link is clicked.
     const linkState = (pageName) => {
-        return page === pageName ? 'tabs active' : 'tabs'
+        return page === pageName ? 'tabs active' : 'tabs';
     };
 
     return (
-        <ul className={'tabs'}>
+        <ul className={'tabs flex'}>
             <li className='tab-items'>
                 <a
                     href="#about"
                     onClick={() => pageContentHandler('About Me')}
-                    className={linkState('About Me')}
+                    className={linkState('About Me') + ' px-4 py-2'}
                 >About me
                 </a>
             </li>
@@ -23,7 +21,7 @@ function TopNav({ page, pageContentHandler }) {
                 <a
                     href="#portfolio"
                     onClick={() => pageContentHandler('Portfolio')}
-                    className={linkState('Portfolio')}
+                    className={linkState('Portfolio') + ' px-4 py-2'}
                 >Portfolio
                 </a>
             </li>
@@ -31,7 +29,7 @@ function TopNav({ page, pageContentHandler }) {
                 <a
                     href="#contact"
                     onClick={() => pageContentHandler('Contact')}
-                    className={linkState('Contact')}
+                    className={linkState('Contact') + ' px-4 py-2'}
                 >Contact
                 </a>
             </li>
@@ -39,38 +37,35 @@ function TopNav({ page, pageContentHandler }) {
                 <a
                     href="#resume"
                     onClick={() => pageContentHandler('Resume')}
-                    className={linkState('Resume')}
+                    className={linkState('Resume') + ' px-4 py-2'}
                 >Resume
                 </a>
             </li>
         </ul>
-
     );
-};
+}
 
-// Constructs simple header portion at the top of each page 
 function Header() {
     return (
-        <h1>Kole Lam</h1>
+        <h1 className='text-3xl font-semibold'>Kole Lam</h1>
     );
-};
+}
 
 function Footer() {
     return (
-        <section className="footer-items">
-            <div className='footer-links'>
+        <section className="footer-items flex justify-center mt-8">
+            <div className='footer-links mx-4'>
                 <a href="https://github.com/kolelam?tab=repositories" target='_blank' rel='noopener noreferrer'>
                     <img src={gitHubImg} alt='GitHub link' width='50' height='50' />
                 </a>
             </div>
-            <div className='footer-links'>
+            <div className='footer-links mx-4'>
                 <a href="https://www.linkedin.com/in/kole-lam-0329a91a9/" target='_blank' rel='noopener noreferrer'>
                     <img src={linkedInImg} alt='LinkedIn link' width='50' height='50' />
-
                 </a>
             </div>
         </section>
     );
-};
+}
 
 export { TopNav, Header, Footer };

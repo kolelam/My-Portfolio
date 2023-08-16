@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
-import PortfolioPages from './components/home';
+import Portfolio from './components/Portfolio/';
 
 function App() {
-
   return (
     <div className="portfolio">
+      <Portfolio /> {/* Render the Portfolio component here */}
     </div>
   );
 }

@@ -63,44 +63,48 @@ export default function Contact() {
     };
 
     return (
-        <div className='contact'>
-            <form className='contact-form main-container' onSubmit={handleSubmit}>
-                <div className='contact-items name'>
-                    <label htmlFor='name'>Name:</label>
+        <div className='contact py-16'>
+            <form className='contact-form main-container bg-white shadow-md rounded-lg p-6' onSubmit={handleSubmit}>
+                <div className='contact-items mb-4'>
+                    <label htmlFor='name' className='block text-gray-700 font-medium'>Name:</label>
                     <input
                         type='text'
                         id='name'
                         name='name'
                         onBlur={handleBlur}
+                        className='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200'
                     />
-                    <div className='form-errors'>
-                        {isNameEmpty && <span className='error'>Name is required</span>}
-                    </div>
+                    {isNameEmpty && <p className='mt-1 text-red-500 text-sm'>Name is required</p>}
                 </div>
 
-                <div className='contact-items email'>
-                    <label htmlFor='email'>Email:</label>
+                <div className='contact-items mb-4'>
+                    <label htmlFor='email' className='block text-gray-700 font-medium'>Email:</label>
                     <input
                         type='text'
                         id='email'
                         name='email'
                         onBlur={handleBlur}
+                        className='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200'
                     />
-                    <div className='form-errors'>
-                        {isEmailInvalid && <span className='error'>Invalid email address</span>}
-                    </div>
+                    {isEmailInvalid && <p className='mt-1 text-red-500 text-sm'>Invalid email address</p>}
                 </div>
 
-                <div className='contact-items message'>
-                    <label htmlFor='message'>Message:</label>
-                    <textarea id='message' name='message' rows={5} onBlur={handleBlur} />
-                    <div className='form-errors'>
-                        {isMessageEmpty && <span className='error'>Message is required</span>}
-                    </div>
+                <div className='contact-items mb-4'>
+                    <label htmlFor='message' className='block text-gray-700 font-medium'>Message:</label>
+                    <textarea
+                        id='message'
+                        name='message'
+                        rows={5}
+                        onBlur={handleBlur}
+                        className='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200'
+                    />
+                    {isMessageEmpty && <p className='mt-1 text-red-500 text-sm'>Message is required</p>}
                 </div>
 
-                <div className='contact-items submit'>
-                    <button type='submit'>Submit</button>
+                <div className='contact-items'>
+                    <button type='submit' className='px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200'>
+                        Submit
+                    </button>
                 </div>
             </form>
         </div>
