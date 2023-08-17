@@ -1,5 +1,5 @@
 import React from 'react';
-import selfImg from './my-app/src/components/assets/IMG_1525.jpg';
+import selfImg from './assets/IMG_1525.jpg';
 
 export default function AboutMe() {
     return (
