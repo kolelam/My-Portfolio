@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.dd9e2b78.css",
+    "main.js": "/My-Portfolio/static/js/main.ffb05752.js",
+    "static/js/787.48fbe5ec.chunk.js": "/My-Portfolio/static/js/787.48fbe5ec.chunk.js",
+    "static/media/tyrsvaultlandingpage.png": "/My-Portfolio/static/media/tyrsvaultlandingpage.f29479a2f09c4d4bd55c.png",
+    "static/media/IMG_1525.jpg": "/My-Portfolio/static/media/IMG_1525.19d98f397292fb0eb0d5.jpg",
+    "static/media/Kole Lam Resume.pdf": "/My-Portfolio/static/media/Kole Lam Resume.9bd17397b13359ded755.pdf",
+    "static/media/crusaderslogo.png": "/My-Portfolio/static/media/crusaderslogo.6518cb56b1ce11ff7c61.png",
+    "static/media/github.png": "/My-Portfolio/static/media/github.e7a18774e43935aeb6a3.png",
+    "static/media/linkedIn.webp": "/My-Portfolio/static/media/linkedIn.c593fb09e0e564af375e.webp",
+    "index.html": "/My-Portfolio/index.html",
+    "main.dd9e2b78.css.map": "/My-Portfolio/static/css/main.dd9e2b78.css.map",
+    "main.ffb05752.js.map": "/My-Portfolio/static/js/main.ffb05752.js.map",
+    "787.48fbe5ec.chunk.js.map": "/My-Portfolio/static/js/787.48fbe5ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd9e2b78.css",
+    "static/js/main.ffb05752.js"
+  ]
+}
